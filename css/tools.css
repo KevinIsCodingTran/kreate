@@ -1,0 +1,21 @@
+.tool-image{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-image: url('../img/large-brush.jpg');
+  background-size: cover;
+}
+
+.tools-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 10vw;
+}
+
+.tool{
+  margin: 20px 10px;
+}
+
+@media (max-width: 1239px){
+  .tools-container {grid-template-columns: 1fr 1fr 1fr;}
+}

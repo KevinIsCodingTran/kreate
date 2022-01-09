@@ -1,0 +1,47 @@
+.image-slider-p{
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-image: url('../img/paint1.jpg');
+  background-size: cover;
+}
+
+.paintings-images{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: #fff;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.paintings-images img{
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.paintings-images img.active{
+  opacity: 0.5;
+}
+
+.paintings-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 10vw;
+}
+
+.painting{
+  margin: 20px 10px;
+}
+
+@media (max-width: 1239px){
+  .paintings-container {grid-template-columns: 1fr 1fr 1fr;}
+}
